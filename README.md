@@ -1,4 +1,4 @@
-# langchain-openai
+# langchain-moonshot
 
 This package contains the LangChain integrations for MoonshotAI through the `openai` SDK.
 
