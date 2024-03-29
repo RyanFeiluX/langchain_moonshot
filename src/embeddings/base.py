@@ -50,7 +50,7 @@ class OpenAIEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from src import OpenAIEmbeddings
+            from langchain_moonshot import OpenAIEmbeddings
 
             model = OpenAIEmbeddings(model="text-embedding-3-large")
     """

@@ -633,7 +633,7 @@ class OpenAI(BaseOpenAI):
     Example:
         .. code-block:: python
 
-            from src import OpenAI
+            from langchain_moonshot import OpenAI
 
             model = OpenAI(model_name="gpt-3.5-turbo-instruct")
     """

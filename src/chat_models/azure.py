@@ -35,7 +35,7 @@ class AzureChatOpenAI(ChatOpenAI):
 
     .. code-block:: python
 
-        from src import AzureChatOpenAI
+        from langchain_moonshot import AzureChatOpenAI
 
         AzureChatOpenAI(
             azure_deployment="35-turbo-dev",
