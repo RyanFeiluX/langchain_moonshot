@@ -21,7 +21,7 @@ class AzureOpenAIEmbeddings(OpenAIEmbeddings):
     Example:
         .. code-block:: python
 
-            from src import AzureOpenAIEmbeddings
+            from langchain_moonshot import AzureOpenAIEmbeddings
 
             openai = AzureOpenAIEmbeddings(model="text-embedding-3-large")
     """

@@ -1,5 +1,5 @@
 import os
-from openai import OpenAI
+# from openai import OpenAI
 from langchain_moonshot import ChatOpenAI, OpenAIEmbeddings, OpenAIClone
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
@@ -12,12 +12,15 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 
 api_key = "sk-l6Wg4HFd1uIjU2nlxTonoqVHJ2k8Vz0UXrszBWJoXqqw1N6v"
 base_url = "https://api.moonshot.cn/v1"
+proxy = "https://10.144.1.10:8080"
 
 os.environ['MOONSHOT_API_KEY'] = api_key
 os.environ['MOONSHOT_API_BASE'] = base_url
+# os.environ['OPENAI_PROXY'] = proxy
 
 llm = ChatOpenAI(model_name="moonshot-v1-8k")
 print('API_BASE: %s' % llm.openai_api_base)
+print('PROXY: %s' % llm.openai_proxy)
 print('API_KEY: %s' % llm.openai_api_key)
 print('Model: %s' % llm.model_name)
 
@@ -42,6 +45,7 @@ file_content = client.files.content(file_id=file_object.id).text
 text_splitter = RecursiveCharacterTextSplitter()
 documents = text_splitter.split_documents([Document(file_content)])
 
+# from langchain_community.vectorstores import FAISS
 vector = FAISS.from_documents(documents, embeddings)  # TODO Investigate its logic
 
 # from langchain.chains.combine_documents import create_stuff_documents_chain

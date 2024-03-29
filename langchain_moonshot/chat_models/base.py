@@ -238,7 +238,7 @@ class ChatOpenAI(BaseChatModel):
     Example:
         .. code-block:: python
 
-            from src import ChatOpenAI
+            from langchain_moonshot import ChatOpenAI
 
             model = ChatOpenAI(model_name="gpt-3.5-turbo")
     """
@@ -852,7 +852,7 @@ class ChatOpenAI(BaseChatModel):
         Example: Function-calling, Pydantic schema (method="function_calling", include_raw=False):
             .. code-block:: python
 
-                from src import ChatOpenAI
+                from langchain_moonshot import ChatOpenAI
                 from langchain_core.pydantic_v1 import BaseModel
 
                 class AnswerWithJustification(BaseModel):
@@ -873,7 +873,7 @@ class ChatOpenAI(BaseChatModel):
         Example: Function-calling, Pydantic schema (method="function_calling", include_raw=True):
             .. code-block:: python
 
-                from src import ChatOpenAI
+                from langchain_moonshot import ChatOpenAI
                 from langchain_core.pydantic_v1 import BaseModel
 
                 class AnswerWithJustification(BaseModel):
@@ -894,7 +894,7 @@ class ChatOpenAI(BaseChatModel):
         Example: Function-calling, dict schema (method="function_calling", include_raw=False):
             .. code-block:: python
 
-                from src import ChatOpenAI
+                from langchain_moonshot import ChatOpenAI
                 from langchain_core.pydantic_v1 import BaseModel
                 from langchain_core.utils.function_calling import convert_to_openai_tool
 
@@ -916,7 +916,7 @@ class ChatOpenAI(BaseChatModel):
         Example: JSON mode, Pydantic schema (method="json_mode", include_raw=True):
             .. code-block::
 
-                from src import ChatOpenAI
+                from langchain_moonshot import ChatOpenAI
                 from langchain_core.pydantic_v1 import BaseModel
 
                 class AnswerWithJustification(BaseModel):
@@ -944,7 +944,7 @@ class ChatOpenAI(BaseChatModel):
         Example: JSON mode, no schema (schema=None, method="json_mode", include_raw=True):
             .. code-block::
 
-                from src import ChatOpenAI
+                from langchain_moonshot import ChatOpenAI
 
                 structured_llm = llm.with_structured_output(method="json_mode", include_raw=True)
 
