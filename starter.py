@@ -10,7 +10,7 @@ from langchain_community.vectorstores import FAISS
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.chains.combine_documents import create_stuff_documents_chain
 
-api_key = "sk-l6Wg4HFd1uIjU2nlxTonoqVHJ2k8Vz0UXrszBWJoXqqw1N6v"
+api_key = "sk-l6Wg......Xqqw1N6v"
 base_url = "https://api.moonshot.cn/v1"
 proxy = "https://10.144.1.10:8080"
 
