@@ -12,7 +12,7 @@ pip install langchain-moonshot
 - Get a Moonshot base url and set it as an environment variable (`MOONSHOT_API_BASE`)
 
 
-## LLM
+## LLM (not supported yet)
 
 See a [usage example](http://python.langchain.com/docs/integrations/llms/openai).
 
@@ -20,7 +20,7 @@ See a [usage example](http://python.langchain.com/docs/integrations/llms/openai)
 from langchain_moonshot import OpenAI
 ```
 
-Obsolete: If you are using a model hosted on `Azure`, you should use different wrapper for that:
+If you are using a model hosted on `Azure`, you should use different wrapper for that:
 ```python
 from langchain_openai import AzureOpenAI
 ```
